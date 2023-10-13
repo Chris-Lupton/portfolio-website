@@ -1,7 +1,7 @@
-export function RomanCalculator() {
+export function RomanCalculator({ blur }) {
 
     return (
-        <section className='project'>
+        <section className='project' id={blur}>
             <h1>Roman Calculator</h1>
             <p>A calculator mobile app that uses roman numerals. Built using React Native and Javascript as a short fun project. It can be used to make simple calculations, while also handling fractions, and it will convert any numeral to its decimal value.</p>
             <div className="button-box">

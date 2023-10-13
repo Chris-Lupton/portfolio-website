@@ -191,6 +191,32 @@ button {
   flex-direction: column;
 }
 
+#blur-in{
+  animation: 0.2s blur-in linear ;
+}
+
+@keyframes blur-in {
+  from {
+    filter: blur(6px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+
+#blur-out{
+  animation: 0.2s blur-out linear ;
+}
+
+@keyframes blur-out {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(6px);
+  }
+}
+
 .button-box {
   display: flex;
   flex-direction: row;

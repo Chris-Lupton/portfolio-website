@@ -5,10 +5,17 @@ import { AiOutlineClose } from 'react-icons/ai'
 export function Home ({ colour, setColour }) {
 
   const [display, setDisplay] = useState('')
+  const [blur, setBlur] = useState('blur-in')
 
   function changeProject(e) {
-    setDisplay(e.target.value)
-    setColour('display-red')
+    if(e.target.value !== display){
+      setBlur('blur-out')
+      setTimeout(() => {
+        setBlur('blur-in')
+        setDisplay(e.target.value)
+      }, 200);
+      setColour('display-red')
+    }
   }
 
   return (
@@ -16,7 +23,7 @@ export function Home ({ colour, setColour }) {
       <div className="top-bar" id={colour}></div>
       <div className="left-bar" id={colour}></div>
       <div className="display">
-        <Project display={display} colour={colour} setColour={setColour}/>
+        <Project display={display} colour={colour} setColour={setColour} blur={blur}/>
         {display && <button id='close-button' onClick={changeProject} value={''}><AiOutlineClose size={26}/></button>}
       </div>
 

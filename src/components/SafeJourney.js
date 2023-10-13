@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function SafeJourney({ colour }) {
+export function SafeJourney({ colour, blur }) {
     
     const [showVideo, setShowVideo] = useState(false)
 
@@ -9,7 +9,7 @@ export function SafeJourney({ colour }) {
     }
 
     return (
-        <section className='project'>
+        <section className='project' id={blur}>
             <h1>Safe Journey</h1>
             <p>Safe Journey is a mobile app developed as part of a team during the Northcoders bootcamp. It allows you to share your location and journey plans with your friends, who can track you and receive notifications in real time. Built using React Native, Express.js and MongoDB</p>
             <div className="button-box">

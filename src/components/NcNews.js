@@ -1,8 +1,8 @@
 
-export function NcNews() {
+export function NcNews({ blur }) {
     
     return (
-        <section className='project'>
+        <section className='project' id={blur}>
             <h1>Nc News</h1>
             <p>NC News is a social media style website that displays articles and comments, developed during my time on the Northcoders bootcamp. Built using PSQL Express.js React.js and Node.</p>
             <div className="button-box">
