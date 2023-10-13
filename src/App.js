@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function App() {
 
-  const [colour, setColour] = useState('display-red')
+  const [colour, setColour] = useState('display-green')
 
   return (
     <div className="App">

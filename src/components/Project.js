@@ -16,11 +16,15 @@ export function Project({ display, colour, setColour, blur }) {
     }
 
     if (display === 'romancalculator') {
-        setColour('display-green')
+        setColour('display-red')
         return <RomanCalculator blur={blur}/>
     }
 
-    else return (
+    if (!display) {
+        setColour('display-green')
+    }
+    
+    return (
         <section className='project' id={blur}>
             <h1>Full Stack Developer</h1>
             <p>My name is Christopher Lupton, I'm a junior full-stack developer based in the north-east. I recently graduated the Northcoders 13 week software development bootcamp where we learned Javascript, Node, Express, React, HTML and CSS, as well as test driven development using Jest, and practiced concepts such as pair programming.

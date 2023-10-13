@@ -12,12 +12,20 @@ export function Header ({ colour }) {
 
   useEffect(() => {
     if(colour === 'display-blue'){
-      setColor1('#00008b')
-      setColor2('#9932cc')
+      setColor1('#2300af')
+      setColor2('#552cb4')
     }
     if(colour === 'display-red'){
-      setColor1('#b55a0b')
-      setColor2('#620d0d')
+      setColor1('#973f09')
+      setColor2('#8f2509')
+    }
+    if(colour === 'display-green'){
+      setColor1('#279408')
+      setColor2('#77bd08')
+    }
+    if(colour === 'display-orange'){
+      setColor1('#b67e03')
+      setColor2('#a09905')
     }
   }, [colour])
 

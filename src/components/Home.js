@@ -11,10 +11,9 @@ export function Home ({ colour, setColour }) {
     if(e.target.value !== display){
       setBlur('blur-out')
       setTimeout(() => {
-        setBlur('blur-in')
         setDisplay(e.target.value)
+        setBlur('blur-in')
       }, 200);
-      setColour('display-red')
     }
   }
 
