@@ -35,9 +35,9 @@ export function Header ({ colour }) {
         <Link to={'https://www.codewars.com/users/Chris-Lupton'}><CodewarsIcon color1={color1} color2={color2}/></Link>
       </div>
       <div>
-        <Link className='icon' to={'https://github.com/Chris-Lupton'} target="_blank"><BsGithub size={35}/></Link>
+        <Link className='icon' to={'https://github.com/Chris-Lupton'} target="_blank"><BsGithub size={35} /></Link>
         <Link className='icon' to={'https://www.linkedin.com/in/christopher--lupton/'} target="_blank"><BsLinkedin size={35}/></Link>
-        <Link className='icon' ><BsFillEnvelopeFill size={35}/></Link>
+        <Link className='icon' to={'mailto:kitlupton@hotmail.com'} ><BsFillEnvelopeFill size={35}/></Link>
       </div>
     </header>
   )
