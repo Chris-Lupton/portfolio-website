@@ -7,7 +7,7 @@ export function Project({ display, colour, setColour, blur }) {
 
     if (display === 'ncnews') {
         setColour('display-orange')
-        return <NcNews blur={blur}/>
+        return <NcNews colour={colour} blur={blur}/>
     }
 
     if (display === 'safejourney') {
@@ -17,7 +17,7 @@ export function Project({ display, colour, setColour, blur }) {
 
     if (display === 'romancalculator') {
         setColour('display-red')
-        return <RomanCalculator blur={blur}/>
+        return <RomanCalculator colour={colour} blur={blur}/>
     }
 
     if (!display) {
@@ -26,8 +26,9 @@ export function Project({ display, colour, setColour, blur }) {
     
     return (
         <section className='project' id={blur}>
+            <div className="left-bar" id={colour}></div>
             <h1>Full Stack Developer</h1>
-            <p>My name is Christopher Lupton, I'm a junior full-stack developer based in the north-east. I recently graduated the Northcoders 13 week software development bootcamp where we learned Javascript, Node, Express, React, HTML and CSS, as well as test driven development using Jest, and practiced concepts such as pair programming.
+            <p className="text">My name is Christopher Lupton, I'm a junior full-stack developer based in the north-east. I recently graduated the Northcoders 13 week software development bootcamp where we learned Javascript, Node, Express, React, HTML and CSS, as well as test driven development using Jest, and practiced concepts such as pair programming.
             <br></br>
             <br></br>
 

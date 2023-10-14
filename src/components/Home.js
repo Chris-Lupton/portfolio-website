@@ -20,7 +20,6 @@ export function Home ({ colour, setColour }) {
   return (
     <main className="home">
       <div className="top-bar" id={colour}></div>
-      <div className="left-bar" id={colour}></div>
       <div className="display">
         <Project display={display} colour={colour} setColour={setColour} blur={blur}/>
         {display && <button id='close-button' onClick={changeProject} value={''}><AiOutlineClose size={26}/></button>}
@@ -32,7 +31,6 @@ export function Home ({ colour, setColour }) {
         <button id={colour} onClick={changeProject} value={'safejourney'}>Safe Journey</button>
         <button id={colour} onClick={changeProject} value={'romancalculator'}>Roman Calculator</button>
       </div>
-      <div className="right-bar" id={colour}></div>
       <div className="bottom-bar" id={colour}></div>
     </main>
   )
