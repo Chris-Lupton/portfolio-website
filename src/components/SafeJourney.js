@@ -21,7 +21,7 @@ export function SafeJourney({ colour, blur }) {
                 <a className='project-button'  onClick={playVideo}><b>Presentation</b></a>
             </div>
             {showVideo&&<div className="video-box"><span style={{display:'flex','flex-direction':'column',width:'fit-content',height:'fit-content'}}>
-                    <iframe title='safeJourney' id={colour} allow="autoplay" allowfullscreen src="https://clipchamp.com/watch/GNvttaH0by6/embed" width="800" height="450"></iframe>
+                    <iframe title='safeJourney' id={colour} allow="autoplay" allowfullscreen='true' src="https://clipchamp.com/watch/GNvttaH0by6/embed?autoplay=1" width="800" height="450"></iframe>
                     <button className="video-close" id={colour} onClick={playVideo}>Close</button>
                 </span></div>}
         </section>
