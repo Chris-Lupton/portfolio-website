@@ -9,6 +9,19 @@ export function Header ({ colour }) {
 
   const [color1, setColor1] = useState('')
   const [color2, setColor2] = useState('')
+  const [isMobile, setIsMobile] = useState(false)
+ 
+  const handleResize = () => {
+      if (window.innerWidth < 480) {
+          setIsMobile(true)
+      } else {
+          setIsMobile(false)
+      }
+  }
+
+  useEffect(() => {
+      window.addEventListener("resize", handleResize)
+  }, [])
 
   useEffect(() => {
     if(colour === 'display-blue'){
@@ -32,12 +45,12 @@ export function Header ({ colour }) {
   return (
     <header className="header">
       <div>
-        <Link to={'https://www.codewars.com/users/Chris-Lupton'}><CodewarsIcon color1={color1} color2={color2}/></Link>
+        <Link to={'https://www.codewars.com/users/Chris-Lupton'}><CodewarsIcon color1={color1} color2={color2} isMobile={isMobile}/></Link>
       </div>
       <div>
-        <Link className='icon' to={'https://github.com/Chris-Lupton'} target="_blank"><BsGithub size={35} /></Link>
-        <Link className='icon' to={'https://www.linkedin.com/in/christopher--lupton/'} target="_blank"><BsLinkedin size={35}/></Link>
-        <Link className='icon' to={'mailto:kitlupton@hotmail.com'} ><BsFillEnvelopeFill size={35}/></Link>
+        <Link className='icon' to={'https://github.com/Chris-Lupton'} target="_blank"><BsGithub size={isMobile?28:35} /></Link>
+        <Link className='icon' to={'https://www.linkedin.com/in/christopher--lupton/'} target="_blank"><BsLinkedin size={isMobile?28:35}/></Link>
+        <Link className='icon' to={'mailto:kitlupton@hotmail.com'} ><BsFillEnvelopeFill size={isMobile?28:35}/></Link>
       </div>
     </header>
   )

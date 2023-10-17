@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-export const CodewarsIcon = ({ color1 = "#3C7EBB", color2 = "#3C7EBB"}) => (
-    <svg width="450" height="30" viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
+export const CodewarsIcon = ({ color1 = "#3C7EBB", color2 = "#3C7EBB", isMobile}) => (
+    <svg width={isMobile? "300" : "450"} height={isMobile? "20" : "30"} viewBox="0 0 300 20" xmlns="http://www.w3.org/2000/svg">
     <path fill="#303133" d="M5.774 20L0 10 5.774 0h278.452v20z"/>
     <text fill="#dddddd" font-family="Lato, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" x="47" y="15">Chris-Lupton</text>
     <path fill="#303133" d="M190 0h50v20h-50z"/>
@@ -12,5 +12,5 @@ export const CodewarsIcon = ({ color1 = "#3C7EBB", color2 = "#3C7EBB"}) => (
     <text fill={color2} font-family="Lato, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" x="20" y="12" text-anchor="middle" transform="translate(1 1)">4 kyu</text>
     <path fill={color1} d="M6.196 19L1 10l5.196-9h31.177l5.196 9-5.196 9H6.196zm29.966-2.078l4-6.922-4-6.922H7.397l-4 6.922 4 6.922h28.765z" />
     </svg>
-);
+)
 
