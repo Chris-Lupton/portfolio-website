@@ -27,10 +27,10 @@ export function Home ({ colour, setColour }) {
 
       <div className="projects">
         <h2>Projects</h2>
-        <button id={colour} onClick={changeProject} value={'ncnews'}>NC News</button>
-        <button id={colour} onClick={changeProject} value={'safejourney'}>Safe Journey</button>
-        <button id={colour} onClick={changeProject} value={'romancalculator'}>Roman Calculator</button>
-        <button id={colour} onClick={changeProject} value={'pythontriangles'}>Sierpiński Triangle</button>
+        <button className="button" id={colour} onClick={changeProject} value={'ncnews'}>NC News</button>
+        <button className="button" id={colour} onClick={changeProject} value={'safejourney'}>Safe Journey</button>
+        <button className="button" id={colour} onClick={changeProject} value={'romancalculator'}>Roman Calculator</button>
+        <button className="button" id={colour} onClick={changeProject} value={'pythontriangles'}>Sierpiński Triangle</button>
       </div>
       <div className="bottom-bar" id={colour}></div>
     </main>

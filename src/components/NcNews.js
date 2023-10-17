@@ -10,9 +10,9 @@ export function NcNews({ blur, colour }) {
             <br/>
             PSQL | Express | React | Node</p>
             <div className="button-box">
-                <a className='project-button' target="_blank" href='https://github.com/Chris-Lupton/nc-news-project-front-end'><b>GitHub</b> <small>(Front-end)</small></a>
-                <a className='project-button' target="_blank" href='https://github.com/Chris-Lupton/be-nc-news-project'><p><b>GitHub</b> <small>(Back-end)</small></p></a>
-                <a className='project-button' target="_blank" href='https://chrisl-nc-news.netlify.app/'><b>View Site</b></a>
+                <a className='project-button' rel="noreferrer" target="_blank" href='https://github.com/Chris-Lupton/nc-news-project-front-end'><b>GitHub</b> <small>(Front-end)</small></a>
+                <a className='project-button' rel="noreferrer" target="_blank" href='https://github.com/Chris-Lupton/be-nc-news-project'><p><b>GitHub</b> <small>(Back-end)</small></p></a>
+                <a className='project-button' rel="noreferrer" target="_blank" href='https://chrisl-nc-news.netlify.app/'><b>View Site</b></a>
             </div>
         </section>
     )

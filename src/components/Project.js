@@ -41,7 +41,7 @@ export function Project({ display, colour, setColour, blur }) {
             This website was built using React.js and CSS, the source code can be viewed on GitHub, along with other projects I have completed.
             </p>
             <div className="button-box">
-                <a className='project-button' target="_blank" href='https://github.com/Chris-Lupton/portfolio-website'><b>GitHub</b></a>
+                <a className='project-button' rel="noreferrer" target="_blank" href='https://github.com/Chris-Lupton/portfolio-website'><b>GitHub</b></a>
             </div>
         </section>
     )
