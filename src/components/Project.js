@@ -1,6 +1,7 @@
 import { NcNews } from "./NcNews"
 import { SafeJourney } from "./SafeJourney"
 import { RomanCalculator } from "./RomanCalculator"
+import { PythonTriangles } from "./PythonTriangles"
 
 
 export function Project({ display, colour, setColour, blur }) {
@@ -18,6 +19,11 @@ export function Project({ display, colour, setColour, blur }) {
     if (display === 'romancalculator') {
         setColour('display-red')
         return <RomanCalculator colour={colour} blur={blur}/>
+    }
+
+    if (display === 'pythontriangles') {
+        setColour('display-red')
+        return <PythonTriangles colour={colour} blur={blur}/>
     }
 
     if (!display) {
