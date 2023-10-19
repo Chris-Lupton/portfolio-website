@@ -49,8 +49,9 @@ a {
   border-top: 15px solid transparent;
 }
 .top-bar{
+  align-self: center;
   grid-area: top;
-  translate: calc(-10% + 100px) 0px;
+  translate: calc(-15% + 110px) 0px;
   transform: skew(45deg);
   width: 55vw;
   max-width: 700px;
@@ -59,6 +60,7 @@ a {
   border-top: 15px solid transparent;
 }
 .bottom-bar{
+  align-self: center;
   grid-area: bottom;
   translate: calc(80% - 55px) 0px;
   transform: skew(45deg);
@@ -97,6 +99,13 @@ a {
     rgb(127, 172, 5)
   ) border-box;
 }
+#display-purple{
+  background: linear-gradient(#202020, #202020) padding-box, linear-gradient(
+    var(--angle),
+    rgb(141, 10, 132),
+    rgb(12, 167, 154)
+  ) border-box;
+}
 
 .button {
   margin: 1.2em;
@@ -131,7 +140,7 @@ a {
   display: grid;
   width:'fit-content';
   grid-template-columns: auto 30%;
-  grid-template-rows: 16px auto 16px;
+  grid-template-rows: 20% 60% 20%;
   grid-template-areas: 
       'top top'
       'home projects'
@@ -139,11 +148,14 @@ a {
 }
 
 .display {
+  grid-area: home;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   z-index: 0;
+  padding-top: 10vh;
+  align-self: flex-start;
 }
 
 .projects {
@@ -153,7 +165,7 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-bottom: 5em;
+  padding-bottom: 4em;
   padding-right: 5em;
 }
 
@@ -292,7 +304,7 @@ iframe {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .header {
     flex-direction: column;
     margin: 1em 0;
@@ -341,6 +353,7 @@ iframe {
     margin-top: 1em;
   }
   .display{
+    padding-top: 0;
     width: 100vw;
   }
 
