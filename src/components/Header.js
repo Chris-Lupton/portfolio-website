@@ -40,6 +40,10 @@ export function Header ({ colour }) {
       setColor1('#b67e03')
       setColor2('#a09905')
     }
+    if(colour === 'display-purple'){
+      setColor1('#580d82')
+      setColor2('#116fcc')
+    }
   }, [colour])
 
   return (

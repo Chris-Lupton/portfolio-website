@@ -22,7 +22,7 @@ export function Project({ display, colour, setColour, blur }) {
     }
 
     if (display === 'pythontriangles') {
-        setColour('display-red')
+        setColour('display-purple')
         return <PythonTriangles colour={colour} blur={blur}/>
     }
 
